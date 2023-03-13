@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Drop down menu hover</title>
+    <style>
+    
+        body{
+            background: #333;
+        }
+        .dropdownmenu ul, .dropdownmenu li{
+            margin: 0;
+            padding: 0;
+        }
+        .dropdownmenu ul{
+            background: gray;
+            list-style: none;
+            width: 100%;
+        }
+        .dropdownmenu li{
+            float: left;
+            position: relative;
+            width: auto;
+        }
+        .dropdownmenu a{
+            background: #30a6e6;
+            color: white;
+            display: block;
+         font-weight: 400;
+            font-size: 13px;
+            font-family: 'Poppins',sans-serif;
+            padding: 15px 55px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+        .dropdownmenu li:hover a{
+            background: #34495e;
+        }
+        #submenu{
+            left: 0;
+            opacity: 0.5;
+            position: absolute;
+            top: 35px;
+            visibility: hidden;
+            z-index: 1;
+        }
+        li:hover ul#submenu{
+            opacity: 1;
+            top: 80px;
+            visibility: visible;
+        }
+        #submenu li{
+            float: none;
+            width: 100%;
+        }
+        #submenu a:hover{
+            background: #df4b05;
+        }
+        #submenu a{
+            background-color: #34495e;
+        }
+    
+    
+    
+    </style>
+    </head>
+ <body>
+  <nav class="dropdownmenu">
+   <ul>
+      <li><a href="">HOME</a></li>
+      <li><a href="">ABOUT ME</a></li>
+       <li><a href="">GALLERY</a>
+      <ul id="submenu">
+       <li><a href="">SVG CANVAS</a></li>
+        <li><a href="">CSS JS</a></li>
+       <li><a href="">WORDPRESS</a></li>
+       </ul>
+       </li>
+       <li><a href="">NEWS</a></li>
+       <li><a href="">CONTACT US</a></li>
+       </ul> 
+    </nav>  
+    
+    
+    
+    
+    
+    
+    </body>   
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
